@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("/fonts/Roboto-Bold.ttf");
+}
+
+body {
+    background-color: #000;
+    font-family: "Roboto-Bold";
+    max-width: 400px;
+}
+
+h1 {
+    color: grey;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.action span {
+    display: inline-block;
+    margin: 8px;
+}
+
+.button-grid {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+}
+
+.gpio-grid {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 234, 255);
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 9px;
+    margin: 16px;
+    text-decoration: none;
+    background-color: rgb(58, 58, 58);
+    font-size: 12px;
+}
+
+span {
+    color: rgb(0, 234, 255);
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}

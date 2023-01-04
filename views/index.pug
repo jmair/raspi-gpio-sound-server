@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title=title
+    link(rel='stylesheet' href='/styles/index.css')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+  body
+    div.container
+      h1 Server
+      div.button-grid
+        each val in [ 'laugh']
+          a(class='audio-links' href='' data-filename=val + '.wav')=val
+      div.gpio-grid
+        each val, key in {'Trigger Relay': 37}
+          if key
+            div.action 
+              span=key
+              input(type='checkbox' class='on' name='on' data-gpio=val)                                                                 
+      script(src='/js/index.js') 
