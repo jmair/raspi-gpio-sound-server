@@ -4,31 +4,33 @@ A simple Express server that is desinged to run on a Raspberry Pi.
 Connect your Raspberry Pi to your network, connect a relay and/or motors etc. to GPIOs and a speaker to your audio output.
 Compressed air tanks attached to sprinkler valves and electric motors connected to the relay allow for automation fun.
 
-## Install Node on PI
+\*Web interface will be served at the Raspberry Pi's IP address.
 
-## Allow access to /dev/mem for sound playback on PI
+- ## Install Node on PI
 
-`sudo chmod g+rw /dev/mem`
+- ## Allow access to /dev/mem for sound playback on PI
 
-## Place .wav files in project /audio directory
+  `sudo chmod g+rw /dev/mem`
 
-## Install dependencies from project root
+- ## Place .wav files in project /audio directory
 
-`npm install`
+- ## Install dependencies from project root
 
-## Start server from project root with
+  `npm install`
 
-`node server.js`
+- ## Start server from project root with
 
-## Install PM2 as a Node runner on PI
+  `node server.js`
 
-`sudo npm install -g pm2`
+- ## Install PM2 as a Node runner on PI
 
-## Run server with runner
+  `sudo npm install -g pm2`
 
-`pm2 start server.js`
+- ## Run server with runner
 
-## Set PM2 to start on boot on PI
+  `pm2 start server.js`
+
+- ## Set PM2 to start on boot on PI
 
 - `pm2 startup`
 
